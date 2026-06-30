@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EAGLE STARS FILM PRODUCTION</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:gold;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:gold;
+}
+
+.hero h2{
+font-size:26px;
+margin-top:15px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 40px;
+background:gold;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* Sections */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+font-size:40px;
+color:gold;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+}
+
+.card p{
+padding-bottom:20px;
+text-align:center;
+color:#bbb;
+}
+
+/* Movies */
+
+.movies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.movie{
+background:#1c1c1c;
+border-radius:15px;
+overflow:hidden;
+}
+
+.movie img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.movie h3{
+padding:15px;
+}
+
+/* Form */
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+
+width:100%;
+padding:15px;
+margin:15px 0;
+background:#222;
+border:none;
+color:white;
+border-radius:8px;
+}
+
+button{
+
+padding:15px 35px;
+background:gold;
+border:none;
+font-size:18px;
+cursor:pointer;
+border-radius:30px;
+}
+
+/* AI Chat */
+
+.chatbox{
+
+max-width:700px;
+margin:auto;
+background:#1d1d1d;
+padding:30px;
+border-radius:15px;
+}
+
+.chat-window{
+
+height:250px;
+overflow-y:auto;
+background:#111;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.bot{
+
+background:#333;
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.user{
+
+background:gold;
+color:black;
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+text-align:right;
+}
+
+.chat-input{
+
+display:flex;
+gap:10px;
+}
+
+.chat-input input{
+
+flex:1;
+}
+
+/* Footer */
+
+footer{
+
+background:#000;
+padding:30px;
+text-align:center;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:42px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logO">EAGLE STARS</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#actors">Actors</a></li>
+<li><a href="#directors">Directors</a></li>
+<li><a href="#movies">Movies</a></li>
+<li><a href="#apply">Apply</a></li>
+<li><a href="#chat">AI Chat</a></li>
+<li><a href="https://youtube.com/@greenhousestudios6889?si=xfAgcwzdX7Qn9rYT">WATCH MOVIES</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<div>
+
+<h1>EAGLE STARS FILM PRODUCTION</h1>
+
+<h2>Optimality is our Identity</h2>
+
+<p>
+Professional Film Production Company dedicated to creating inspiring stories, discovering talents, and producing world-class movies.
+Founded on <b>18 October 2017</b>.
+</p>
+
+<a href="#about" class="btn">Explore</a>
+
+</div>
+
+</div>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="picks.jpg">
+
+<div>
+
+<h2>EAGLE STARS FILM PRODUCTION</h2>
+
+<br>
+
+<p>
+
+Founded on <b>18 October 2017</b>, Eagle Stars Film Production has become one of the fastest-growing movie production companies dedicated to storytelling, filmmaking excellence, talent discovery, and entertainment innovation.
+
+</p>
+
+<br>
+
+<p>
+
+Our slogan:
+
+<b>Optimality is our Identity.</b>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="actors">
+
+<h2 class="title">Our Actors</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="Actor 1.png">
+<h3>Ilugo M.V Bianca</h3>
+<p> Actor</p>
+</div>
+
+<div class="card">
+<img src="Serah.png">
+<h3>Ishiekwene Serah Gold</h3>
+<p>Actor</p>
+</div>
+
+<div class="card">
+<img src="CANNDID.jpeg">
+<h3>Idegwu Lucky candid</h3>
+<p>Actor</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="directors">
+
+
+<div class="gallery">
+
+<div class="card">
+<img src="ANDAZ.png">
+<h3>Yusuf Andaz</h3>
+<p>Actor</p>
+</div>
+
+<div class="card">
+<img src="SILEVR.png">
+<h3>Idiemo Syslvester</h3>
+<p>ACTOR</p>
+</div>
+
+<div class="card">
+<img src="And.jpeg">
+<h3>Obire Andrew</h3>
+<p>ACTOR</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="directors">
+
+<h2 class="title">Our Directors</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="NAON.png">
+<h3>Addision Naomi</h3>
+<p>ACTORr</p>
+</div>
+
+<div class="card">
+<img src="ISAC.png">
+<h3>ISAAC</h3>
+<p>ACTOR</p>
+</div>
+
+<div class="card">
+<img src="Happiness.pngS.png">
+<h3>Happiness</h3>
+<p>ACTOR</p>
+</div>
+
+</div>
+
+<h2 class="title">Our Director</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="me2.png">
+<h3>Ilugo Macbeth </h3>
+<p>Director</p>
+</div>
+</section>
+
+
+<section id="movies">
+
+<h2 class="title">Movies</h2>
+
+<div class="movies">
+
+<div class="movie">
+<img src="ChatGPT Image Mar 1, 2026, 01_14_34 AM.png">
+<h3>A SCAR TO REMEMBER</h3>
+<p>https://youtu.be/63vfsg0cfGw</p>
+</div>
+
+<div class="movie">
+<img src="incom.png">
+<h3>KWANGA</h3>
+<p>coming soon</p>
+</div>
+
+<div class="movie">
+<img src="images/movie3.jpg">
+<h3>Movie Title</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="apply">
+
+<h2 class="title">Become Part of Eagle Stars</h2>
+
+<form>
+
+<input placeholder="Full Name">
+
+<input placeholder="Email">
+
+<input placeholder="Phone Number">
+
+<input placeholder="State">
+
+<textarea rows="6" placeholder="Tell us about yourself"></textarea>
+
+<button>Submit Application</button>
+
+</form>
+
+</section>
+
+<section id="chat">
+
+<h2 class="title">AI Assistant</h2>
+
+<div class="chatbox">
+
+<div class="chat-window" id="chatWindow">
+
+<div class="bot">
+👋 Welcome to Eagle Stars Film Production.
+How can I assist you today?
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input id="message" placeholder="Ask anything...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+
+    
+
+<h2>EAGLE STARS FILM PRODUCTION</h2>
+
+<p>Optimality is our Identity</p>
+
+<p>Founded: October 18, 2017</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function sendMessage(){
+
+let input=document.getElementById("message");
+
+let chat=document.getElementById("chatWindow");
+
+if(input.value=="") return;
+
+chat.innerHTML+=`
+<div class="user">${input.value}</div>
+`;
+
+setTimeout(()=>{
+
+chat.innerHTML+=`
+<div class="bot">
+Thank you for contacting Eagle Stars Film Production.
+
+This chatbot interface is ready to be connected to OpenAI ChatGPT API for live AI conversations.
+</div>
+`;
+
+chat.scrollTop=chat.scrollHeight;
+
+},500);
+
+input.value="";
+
+}
+
+</script>
+
+</body>
+</html>
